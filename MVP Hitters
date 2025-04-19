@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP Hitters Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+        }
+        header img {
+            width: 250px;
+        }
+        .cta-button {
+            background: #ff5722;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .facilities {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .facility-card {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+        }
+        .input-group input {
+            padding: 8px;
+            border-radius: 5px;
+            width: 100%;
+            border: none;
+            text-align: center;
+        }
+        input::placeholder {
+            color: #aaa;
+        }
+        button {
+            background: #ff5722;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #1f1f1f;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+<img src="DALL·E 2025-03-28 00.12.20 - A bold and sporty logo for 'MVP Hitters Zone'. The logo features a dynamic cricket bat, ball, and stumps inside a stylized shield or arena-like frame.webp" alt="MVP Hitters Zone Logo">        <h1>Welcome to MVP Hitters Zone</h1>
+        <p>Your ultimate box cricket and net practice destination!</p>
+        <a href="#booking" class="cta-button">Book Your Game Now</a>
+    </header>
 
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facilities">
+            <div class="facility-card">
+                <h3>Box Cricket</h3>
+                <p>Experience thrilling box cricket with professional-grade turf.</p>
+            </div>
+            <div class="facility-card">
+                <h3>Practice Nets</h3>
+                <p>Train like a pro with high-quality net practice sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Slot</h2>
+        <form onsubmit="event.preventDefault(); this.reset();">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="contact" placeholder="Contact Number" required>
+                <input type="date" id="date"   placeholder="Date" required>
+                <input type="time" id="time"   placeholder="Time" required>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Check out our exciting gameplay moments.</p>
+        <a href="https://photos.app.goo.gl/3nNnp1KHjBBsrdx8A" target="_blank" class="cta-button">Photos</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Location:PArk road</p>
+        <p>Phone: 9542183744</p>
+        <p>Email: vinayyellu@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MVP Hitters Zone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
